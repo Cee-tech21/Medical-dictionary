@@ -43,7 +43,7 @@ async function callApiUseResult(){
 
 async function useSearchResult(data){
     if(!data[0].shortdef){
-        alert("looks like your search hasn't" +
+        alert("looks like your search hasn't " +
                 "returned a medical definition")
         return
     }
