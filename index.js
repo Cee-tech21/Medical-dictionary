@@ -42,6 +42,12 @@ async function callApiUseResult(){
 }
 
 async function useSearchResult(data){
+    if(!data[0].shortdef){
+        alert("looks like your search hasn't" +
+                "returned a medical definition")
+        return
+    }
+
     if(data[0].shortdef){
             const definitions = data[0].shortdef;
             const wordType = data[0].fl; 
@@ -67,7 +73,7 @@ async function useSearchResult(data){
                                         </p>`;                                
 
             });                                           
-        }
+        } 
 }
 
 async function callApi(theSearch){
