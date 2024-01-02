@@ -2,7 +2,8 @@
 
 // Create some variables
 const someWords = ["cytoplasm", "fatigue", "entrails", "lethargic",
-                    "limb", "endoplasm", "zit", "plasma", "biohazard"]
+                    "limb", "endoplasm", "zit", "plasma", "biohazard",
+                      "Q", "Torch"]
 
 // Get elements from DOM
 const wordOfDayEl = document.querySelector("#word-of-day-el");
